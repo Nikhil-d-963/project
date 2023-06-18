@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NXTBILLION</title>
+    
+    <script src="https://kit.fontawesome.com/21a572959c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <link rel="icon" type="image/x-icon" href="/images/favicon-32x32.png">
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+
+        <nav>
+          <img src="/images/logo (2).png" alt="#" class="logo" />
+
+          <ul id="sideMenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Purchase</a></li> 
+            <i class="fa-regular fa-circle-xmark fas" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars d" onclick="openManu()"></i>
+
+          
+        </nav>
+        <div class="header-text">
+          <p>Freelancing</p>
+          <h1>
+            HI, Welcome to <br> <span>nxtBillion</span>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/user.png" alt="" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About our work</h1>
+            <p>
+              Welcome to our freelancing team! We specialize in app development, web development, consulting, college projects, and online technical courses. With a wealth of experience, we create cutting-edge mobile applications for iOS and Android platforms. Our web development services encompass dynamic and responsive websites that drive business growth. We offer expert consulting to guide organizations through digital challenges. For college projects, we provide comprehensive assistance in coding, design, and project management. Additionally, our online technical courses empower individuals to enhance their app development skills. We are dedicated to delivering high-quality services and fostering long-term partnerships. Contact us today to discover how we can bring your ideas to life..
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <!-- <p class="tab-links" onclick="opentab('education')">Eduction</p> -->
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>UI/UX</span><br>Transforming ideas into engaging UI/UX experiences for users.</li>
+                    <li><span>App Development</span><br>Building cross-platform apps for wider reach and accessibility.</li>
+                    <li><span>Web Development</span><br>Crafting responsive websites that make a lasting impression.</li>
+                    <li><span>Consulting</span><br>Unlocking new opportunities through innovative consulting and strategic planning.</li>
+                </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li>Developed and launched a college app for seamless communication and information sharing among students, faculty, and staff.</li>
+                    <li>Successfully integrated third-party APIs and services to enhance app functionality and user experience</li>
+                    <li>Demonstrated proficiency in utilizing Android development frameworks, Python libraries, and web technologies to streamline development processes.</li>
+                    <li>Resolved technical issues, conducted thorough testing, and implemented quality assurance measures to deliver bug-free applications and tools.</li>
+                    <li>Collaborated with clients and cross-functional teams to gather requirements, provide technical recommendations, and ensure successful project execution.</li>
+                    <li>Contributed to web development projects, delivering responsive and visually appealing websites with optimized user experiences.</li>
+                    <li>Designed and implemented Python tools for network security, including a port scanner for identifying open ports and hacking tools for testing vulnerabilities (Note: Ensure that these tools were used ethically and legally for educational or testing purposes).</li>
+                </ul>
+            </div>
+<!-- 
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2021</span><br>Vivekananda degree college  </li>
+                    <li><span>2022</span><br>ZeroTOMystry </li>
+                    <li><span>2023</span><br>Designing web/App interface </li>
+                </ul>
+            </div> -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our Services</h1>
+            <div class="services-list">
+                <div>
+                  <i class="fa-solid fa-code"></i>
+                   <h2>App Development</h2>
+                   <p>Building innovative mobile applications that redefine user experiences. We specialize in crafting functional, feature-rich apps for various platforms, leveraging cutting-edge technologies for optimal performance and user engagement.</p>
+                   <button class="btn3">Apply</button>
+                </div>
+
+                <div>
+                  <i class="fa-solid fa-crop"></i>
+                  <h2>Consulting</h2>
+                  <p>Expand your business horizons with our diverse consulting courses. Explore strategic planning, market analysis, and industry insights in English or regional languages, enabling you to make informed decisions and achieve sustainable growth.</p>
+                  <button class="btn3">Apply</button>
+               </div>
+
+
+               <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Live Courses</h2>
+                <p>Unlock your potential in application development, cybersecurity, and programming with our comprehensive online courses. Learn in English or regional languages, empowering you to build in-demand skills and excel in the digital world.</p>
+                <button class="btn3">Register</button>
+             </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div id="portfolio">
+      <div class="container">
+      <h1 class="sub-title">Our work</h1>
+      <div class="workList">
+      <!-- Flickity HTML init -->
+      <div class="carousel" data-flickity='{ "autoPlay": true }'>
+      
+          <div class="work carousel-cell">
+              <img src="/images/work-1.png" alt="">
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eum corrupti voluptatibus, iusto dignissimos, ipsam nobis adipisci inventore quas ab, ad velit pariatur laudantium omnis excepturi odio saepe blanditiis. Libero.</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+      
+            <div class="work carousel-cell">
+              <img src="/images/work-1.png" alt="">
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eum corrupti voluptatibus, iusto dignissimos, ipsam nobis adipisci inventore quas ab, ad velit pariatur laudantium omnis excepturi odio saepe blanditiis. Libero.</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+      
+       
+            <div class="work carousel-cell">
+              <img src="/images/work-1.png" alt="">
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eum corrupti voluptatibus, iusto dignissimos, ipsam nobis adipisci inventore quas ab, ad velit pariatur laudantium omnis excepturi odio saepe blanditiis. Libero.</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+       
+            <div class="work carousel-cell">
+              <img src="/images/work-1.png" alt="">
+              <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam eum corrupti voluptatibus, iusto dignissimos, ipsam nobis adipisci inventore quas ab, ad velit pariatur laudantium omnis excepturi odio saepe blanditiis. Libero.</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+      </div>
+      
+      </div>
+      <a href="#" class="btn">See more..</a>
+      </div>
+      </div>
+
+
+  <!-- contect -->
+
+  <div class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> nxtbillion.business@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 9741658576</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <br>
+              <br>
+              <br>
+              <span style="color: red;">Social media platforms will be avaibale soon</span>
+              
+            </div>
+            <a href="tel:9741658576"  class="btn btn2">Contact Now</a>
+        </div>
+
+
+        
+       
+
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required>
+              <input type="email" name="Email" placeholder="Your email" required>
+              <textarea name="Message"  placeholder="Your message" rows="6"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+              <span id="msg"></span>
+              <span id="loader"></span> <!-- Added loader element -->
+          </form>
+          
+      </div>
+
+      
+    </div>
+
+    <div class="copyright">
+      <p>copyright © NXTBillion Made with <i class="fa-solid fa-heart" style="color: red;"></i>  </p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/js/control.js"></script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxJvAKzpN_UdJf_ZA72cs8wP9GH1Pj7q1pn17jm-KA_VnRgmzggwZEPpZGie10OLIsVbA/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  const loader = document.getElementById("loader")
+  form.addEventListener('submit', e => {
+    loader.innerHTML = "Loading..."
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        loader.innerHTML = ""
+        msg.innerHTML = "Message sent Successfully"
+        setTimeout(() => {
+          msg.innerHTML = ""
+        }, 2000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+  </body>
+</html>
