@@ -49,3 +49,10 @@ var $carousel = $('.carousel').flickity({
     });
   });
   
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elem = document.querySelector('.carousel-cell');
+    var flickity = new Flickity(elem, {
+      prevNextButtons: false
+    });
+  });
