@@ -110,6 +110,7 @@ nav ul li a:hover::after{
 }
 
 .about-col-1{
+    padding-top: 100px;
     flex-basis: 35%;
 }
 .about-col-1 img{
